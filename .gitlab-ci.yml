@@ -5,7 +5,7 @@ cache:
  paths:
   - .m2/repository
 
-say_hello:
+runtests:
  image: maven:3.3.9-jdk-8
  script:
   - cd primes; mvn test
