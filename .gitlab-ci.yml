@@ -1,4 +1,4 @@
 say_hello:
  image: maven:3.3.9-jdk-8
  script:
-  - echo 'Hello world'
+  - cd primes; mvn test
