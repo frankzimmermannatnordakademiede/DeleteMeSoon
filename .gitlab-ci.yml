@@ -1,4 +1,11 @@
-say_hello:
- image: alpine-latest
+variables:
+ MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+cache:
+ paths:
+  - .m2/repository
+
+runtests:
+ image: maven:3.3.9-jdk-8
  script:
-  - echo 'Hello world'
+  - cd primes; mvn test
