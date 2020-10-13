@@ -15,4 +15,4 @@ runtestsandprogram:
     name: "${CI_PROJECT_NAME}_${CI_COMMIT_REF_NAME}_${CI_JOB_ID}_pruefungen"
     expire_in: 8 mos
     paths:
-      - "*.txt"
+      - "primes/out.txt"
